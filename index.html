@@ -1,0 +1,82 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hero">
+    <!-- Background Video -->
+    <video autoplay loop muted id="video-background">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <span class="logo">My Portfolio</span>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+            ☰
+        </button>
+    </nav>
+
+    <div class="hero-content">
+        <h1>Ramal Gurung</h1>
+        <p>Frontend Developer & UI/UX Enthusiast</p>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am student at Herald College. This portfolio is to showcase my projects.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div id="projects-grid">
+        <div class="project-card">
+            <h3>Project 1 - Basic HTML Page</h3>
+            <img src="project1.jpg" alt="HTML project preview">
+        </div>
+        <div class="project-card">
+            <h3>Project 2 - Weather App</h3>
+            <img src="project2.jpg" alt="Weather app preview">
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form-id">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-message"></div>
+</section>
+
+<footer>
+    <p>© 2025 My Portfolio. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
